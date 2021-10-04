@@ -1,0 +1,48 @@
+.main-header,
+.mobile-header {
+  background-color: var(--main-color);
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--page-padding);
+  font-size: 1vmax;
+}
+
+.logo {
+  color: var(--accent-light-on-main);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  color: var(--accent-light-on-main);
+  padding-left: 15px;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.mobile-header {
+  display: none;
+  padding: 10px 25px
+}
+
+.mobile-icon {
+  color: var(--accent-light);
+}
+
+@media only screen and (max-width: 800px) {
+  .mobile-header {
+    display: block;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+}

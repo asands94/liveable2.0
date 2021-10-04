@@ -1,0 +1,65 @@
+.subscribe-form {
+  background-color: var(--main-color);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 3vmax 0;
+}
+
+.subscribe-fieldset {
+  border: none;
+  font-size: 1.5vmax;
+}
+
+.subscribe-text,
+.subscribe-subtext {
+  color: var(--accent-light-on-main);
+  text-align: center;
+}
+
+.subscribe-subtext,
+.subscribe-button {
+  color: var(--main-light-color);
+  font-size: 1vmax;
+}
+
+.subscribe-input,
+.subscribe-button {
+  border: none;
+  border-radius: 2.5em;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.287);
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9vmax;
+  padding: .5vmax 1vmax;
+  margin: 2.5vmax .5vmax 0 .5vmax;
+}
+
+.subscribe-button {
+  background-color: var(--accent-light);
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.subscribe-button:hover {
+  cursor: pointer;
+  background-color: var(--main-light-color);
+  color: var(--accent-light)
+}
+
+@media only screen and (max-width: 600px) {
+  .subscribe-fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-input {
+    width: 20vmax;
+    height: 2vmax
+  }
+
+  .subscribe-button {
+    width: 8vmax;
+    height: 3vmax
+  }
+}
