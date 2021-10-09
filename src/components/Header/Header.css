@@ -3,6 +3,7 @@
   background-color: var(--main-color);
   display: flex;
   font-weight: 500;
+  height: 4.5vmax;
   align-items: center;
   justify-content: space-between;
   padding: var(--page-padding);

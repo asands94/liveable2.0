@@ -1,0 +1,69 @@
+.articles-container {
+  background-color: var(--main-light-color);
+  display: flex;
+  flex-direction: column;
+  padding: var(--page-padding);
+}
+
+.house-banner,
+.house-overlay {
+  width: 100vw;
+  position: absolute;
+  height: 33vmax;
+  left: 0;
+  margin-top: -2vmax;
+}
+
+.house-overlay {
+  background-color: #253746df;
+  backdrop-filter: blur(10px);
+  color: var(--main-light-color)
+}
+
+.stories-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--page-padding);
+  height: 28.8vmax;
+}
+
+.stories-header {
+  font-size: 2vmax;
+}
+
+.stories-subtext {
+  font-size: 1.5vmax;
+  margin-top: 1vmax;
+  line-height: 2.2vmax;
+  width: 37vmax
+}
+
+.filters-container {
+  margin-top: 33vmax;
+}
+
+.stories-inputs {
+  color: var(--accent-light);
+  background-color: #fff;
+  border: solid var(--accent-light) 1px;
+  border-radius: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8vmax;
+  padding: .8vmax 1.8vmax;
+  margin: 2.5vmax .5vmax;
+}
+
+.stories-inputs:hover {
+  background-color: var(--accent-light);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.filters-container,
+.articles-cards-container,
+.page-numbers {
+  display: flex;
+  justify-content: center;
+}
