@@ -21,7 +21,7 @@ export default function MainContainer() {
   return (
     <Switch>
       <Route path='/articles/:id'>
-        <ArticleDetail />
+        <ArticleDetail articles={articles} />
       </Route>
       <Route path='/articles'>
         <Articles articles={articles} />

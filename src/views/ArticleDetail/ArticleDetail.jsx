@@ -4,7 +4,7 @@ import { getOneArticle } from '../../services/articles';
 import ArticleDetailCards from '../../components/ArticleDetail/ArticleDetailCards'
 import './ArticleDetail.css'
 
-export default function ArticleDetail() {
+export default function ArticleDetail({ articles }) {
   const [article, setArticle] = useState();
   const { id } = useParams();
 
@@ -21,7 +21,7 @@ export default function ArticleDetail() {
 
   return (
     <div className='article-details-container'>
-      <ArticleDetailCards article={article} />
+      <ArticleDetailCards article={article} articles={articles} />
     </div>
   )
 }
