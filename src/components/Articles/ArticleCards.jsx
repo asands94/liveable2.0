@@ -1,33 +1,21 @@
-import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import Moment from "react-moment";
 import './ArticleCards.css'
 
 export default function ArticleCards({ article }) {
   return (
-    <Card className='article-cards' sx={{ width: 265, height: 350 }}>
-      <CardMedia
-        component="img"
+    <div className='article-card-container'>
+      <img
+        className='article-card-image'
+        src={process.env.REACT_APP_BACKEND_URL + article.image.url}
         alt={article.title}
-        height="210"
-        image={process.env.REACT_APP_BACKEND_URL + article.image.formats.small.url}
       />
-      <CardContent>
-        <Typography gutterBottom variant="h6" component="div">
-          <Link to={`/articles/${article.slug}`}>{article.title}</Link>
-        </Typography>
-        <Typography gutterBottom variant="body2" color="text.secondary">
-          {article.description}
-        </Typography>
-        <Typography variant="body2" component="div">
-          {<Moment format="ll">{article.published_at}</Moment>}
-        </Typography>
-      </CardContent>
-    </Card>
+      <div className='article-card-body'>
+        <Link className='article-link' to={`/articles/${article.slug}`}>{article.title}</Link>
+        <p className='article-card-des'>{article.description}</p>
+        <Moment className='article-date' format="ll">{article.published_at}</Moment>
+      </div>
+    </div>
   );
 }
 
