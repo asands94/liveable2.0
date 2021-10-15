@@ -1,6 +1,12 @@
+import { Link } from 'react-router-dom';
 import './Contact.css'
 
 export default function Contact() {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    <Link to='/success' />
+  }
 
 
   return (
@@ -10,7 +16,7 @@ export default function Contact() {
           <h2>We'd Love to Hear From You!</h2>
         </section>
         <section className='contact-right'>
-          <form name='contact' method='POST' action='success' value='/success'>
+          <form name='contact' method='POST' action='success' onSubmit={handleSubmit}>
             <input type="hidden" name="contact" value="contact" />
             <fieldset className='field'>
               <legend className='contact-legend'>Contact Us</legend>
