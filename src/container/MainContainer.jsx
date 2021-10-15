@@ -9,11 +9,13 @@ import { getAllArticles } from '../services/articles'
 
 export default function MainContainer() {
   const [articles, setArticles] = useState([]);
+  const [searchResult, setSearchResult] = useState([])
 
   useEffect(() => {
     const fetchArticles = async () => {
       const articlesList = await getAllArticles();
       setArticles(articlesList);
+      setSearchResult(articlesList);
     };
     fetchArticles()
   }, [])
@@ -24,7 +26,10 @@ export default function MainContainer() {
         <ArticleDetail articles={articles} />
       </Route>
       <Route path='/articles'>
-        <Articles articles={articles} />
+        <Articles articles={articles}
+          searchResult={searchResult}
+          setSearchResult={setSearchResult}
+        />
       </Route>
       <Route path='/about'>
         <About />

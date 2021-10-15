@@ -1,0 +1,20 @@
+.search-input {
+  color: var(--accent-light);
+  background-color: #fff;
+  border: solid var(--accent-light) 1px;
+  border-radius: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8vmax;
+  padding: .8vmax 1.8vmax;
+  margin: 2.5vmax .5vmax;
+}
+
+.search-input:hover {
+  background-color: var(--accent-light);
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-input::placeholder {
+  letter-spacing: .3px;
+}

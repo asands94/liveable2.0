@@ -3,15 +3,15 @@
   border-radius: .5em;
   display: flex;
   flex-direction: column;
-  margin: 1vmax 1.5vmax;
-  width: 19vmax;
-  height: 23vmax;
+  margin: 6vmax 2vmax 0 2vmax;
+  width: 20vmax;
+  height: 25vmax;
 }
 
 .article-card-image {
   border-radius: .5em .5em 0 0;
-  width: 19vmax;
-  height: 14vmax;
+  width: 20vmax;
+  height: 16vmax;
 }
 
 .article-card-body {
