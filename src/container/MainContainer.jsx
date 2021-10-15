@@ -6,7 +6,6 @@ import Articles from '../views/Articles/Articles';
 import Contact from '../views/Contact/Contact';
 import Home from '../views/Home/Home';
 import { getAllArticles } from '../services/articles'
-import ContactSuccess from '../views/Success/ContactSuccess'
 
 export default function MainContainer() {
   const [articles, setArticles] = useState([]);
