@@ -4,7 +4,7 @@ import './Subscribe.css'
 export default function Subscribe() {
   return (
     <form className='subscribe-form' name='subscribe' method='POST'>
-      <input type="hidden" name="subscribe" value="subscribe" />
+      <input type="hidden" name="form-name" value="subscribe" />
       <fieldset className='subscribe-fieldset'>
         <legend className='subscribe-text'>Subscribe</legend>
         <p className='subscribe-subtext'>Subscribe to stay up-to-date on the latest housing news</p>
