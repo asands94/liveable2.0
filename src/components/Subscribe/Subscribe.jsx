@@ -3,7 +3,8 @@ import './Subscribe.css'
 
 export default function Subscribe() {
   return (
-    <form className='subscribe-form'>
+    <form className='subscribe-form' name='subscribe' method='POST'>
+      <input type="hidden" name="subscribe" value="subscribe" />
       <fieldset className='subscribe-fieldset'>
         <legend className='subscribe-text'>Subscribe</legend>
         <p className='subscribe-subtext'>Subscribe to stay up-to-date on the latest housing news</p>
@@ -13,6 +14,8 @@ export default function Subscribe() {
           className='subscribe-input'
           id='firstname'
           placeholder='First name'
+          name='firstNameSub'
+          required
         />
 
         <label htmlFor='lastname' hidden>Last name:</label>
@@ -20,6 +23,8 @@ export default function Subscribe() {
           className='subscribe-input'
           id='lastname'
           placeholder='Last name'
+          name='lastNameSub'
+          required
         />
 
         <label htmlFor='email' hidden>Email:</label>
@@ -28,9 +33,11 @@ export default function Subscribe() {
           className='subscribe-input'
           id='email'
           placeholder='Email'
+          name='emailSub'
+          required
         />
 
-        <button className='subscribe-button'>Subscribe</button>
+        <button className='subscribe-button' type='submit'>Subscribe</button>
       </fieldset>
     </form>
   )

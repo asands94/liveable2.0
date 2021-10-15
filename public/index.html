@@ -27,6 +27,18 @@
     <title>Liveable</title>
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+    </form>
+    <form name="subscribe" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="firstNameSub" />
+      <input type="text" name="lastNameSub" />
+      <input type="email" name="emailSub" />
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
