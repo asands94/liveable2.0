@@ -38,9 +38,6 @@ export default function MainContainer() {
       <Route path='/contact-us' >
         <Contact />
       </Route>
-      <Route path='/success'>
-        <ContactSuccess />
-      </Route>
       <Route path='/'>
         <Home articles={articles} />
       </Route>
