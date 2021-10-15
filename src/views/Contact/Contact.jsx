@@ -9,7 +9,7 @@ export default function Contact() {
           <h2>We'd Love to Hear From You!</h2>
         </section>
         <section className='contact-right'>
-          <form name='contact' method='POST' action='/success'>
+          <form name='contact' method='POST'>
             <input type="hidden" name="contact" value="contact" />
             <fieldset className='field'>
               <legend className='contact-legend'>Contact Us</legend>
