@@ -1,4 +1,80 @@
 .article-section-container {
   background-color: var(--accent-dark-color);
   height: 100vh;
+  padding: var(--page-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.article-image-border {
+  border: solid var(--accent-light);
+  width: 15vmax;
+  height: 20vmax;
+  position: absolute;
+  z-index: -1;
+}
+
+.top-border {
+  left: 30vmax;
+  bottom: 32vmax
+}
+
+.bottom-border {
+  right: 28.7vmax;
+  bottom: 2vmax;
+}
+
+.article-section-img {
+  width: 15vmax;
+  height: 20vmax;
+  background-color: purple;
+  top: 100px;
+}
+
+.top-article-container,
+.bottom-article-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vmax;
+}
+
+.article-section-text-group {
+  margin: 0 2.5vmax;
+}
+
+.article-section-title {
+  color: var(--accent-light);
+  margin-bottom: 1.5vmax;
+}
+
+.article-section-text {
+  color: var(--main-light-color)
+}
+
+.article-section-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5vmax;
+}
+
+.view-article-button {
+  border: none;
+  border-radius: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8vmax;
+  padding: .8vmax 1.8vmax;
+  margin: 2.5vmax 0;
+  background-color: var(--accent-light);
+  font-weight: 700;
+  color: var(--main-light-color)
+}
+
+.view-article-button:hover {
+  background-color: var(--main-light-color);
+  color: var(--accent-light);
+  cursor: pointer;
 }

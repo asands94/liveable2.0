@@ -30,7 +30,6 @@ export default function ArticleDetailCards({ article, articles }) {
         <h3 className='related-title'>Related Articles</h3>
         {articles.map((allArticles => (
           <ul key={allArticles.id}>
-            {console.log('article: ', article, 'allArticles: ', allArticles)}
             {allArticles.category.name === article.category.name &&
               allArticles.title !== article.title &&
               <Link to={`/articles/${allArticles.slug}`}><li className='related-list'>{allArticles.title}</li></Link>

@@ -3,12 +3,12 @@ import ArticleSection from '../../components/Landing/ArticleSection/ArticleSecti
 import Landing from '../../components/Landing/Landing'
 import Stats from '../../components/Landing/Stats/Stats'
 
-export default function Home() {
+export default function Home({ articles }) {
   return (
     <>
       <Landing />
       <Stats />
-      <ArticleSection />
+      <ArticleSection articles={articles} />
     </>
   )
 }
