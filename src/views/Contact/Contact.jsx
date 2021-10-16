@@ -9,32 +9,32 @@ export default function Contact() {
           <h2>We'd Love to Hear From You!</h2>
         </section>
         <section className='contact-right'>
-          <form name='contact' method='POST'>
+          <form className='form-class' name='contact' method='POST'>
             <input type="hidden" name="form-name" value="contact" />
             <fieldset className='field'>
               <legend className='contact-legend'>Contact Us</legend>
-              <label htmlFor='firstnamecontact' hidden>First name:</label>
-              <input
-                className='contact-input'
-                placeholder='First name*'
-                id='firstnamecontact'
-                name='firstName'
-                required
-
-              />
-              <label htmlFor='lastnamecontact' hidden>Last name:</label>
-              <input
-                className='contact-input'
-                placeholder='Last name*'
-                id='lastnamecontact'
-                name='lastName'
-                required
-
-              />
+              <div className='contact-names'>
+                <label htmlFor='firstnamecontact' hidden>First name:</label>
+                <input
+                  className='contact-input name-input'
+                  placeholder='First name*'
+                  id='firstnamecontact'
+                  name='firstName'
+                  required
+                />
+                <label htmlFor='lastnamecontact' hidden>Last name:</label>
+                <input
+                  className='contact-input name-input'
+                  placeholder='Last name*'
+                  id='lastnamecontact'
+                  name='lastName'
+                  required
+                />
+              </div>
               <label htmlFor='emailcontact' hidden>Email:</label>
               <input
                 type='email'
-                className='contact-input'
+                className='contact-input email-phone-input'
                 placeholder='Email*'
                 id='emailcontact'
                 name='email'
@@ -43,7 +43,7 @@ export default function Contact() {
               <label htmlFor='phonecontact' hidden>Phone:</label>
               <input
                 type='tel'
-                className='contact-input'
+                className='contact-input  email-phone-input'
                 placeholder='Phone'
                 id='phonecontact'
                 name='phone'
