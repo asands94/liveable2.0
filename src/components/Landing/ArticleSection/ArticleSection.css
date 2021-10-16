@@ -13,25 +13,32 @@
   border: solid var(--accent-light);
   width: 15vmax;
   height: 20vmax;
-  position: absolute;
   z-index: -1;
 }
 
 .top-border {
-  left: 30vmax;
-  bottom: 32vmax
+  left: -1.4vmax;
+  bottom: 1.4vmax;
+  position: relative;
 }
 
 .bottom-border {
-  right: 28.7vmax;
-  bottom: 2vmax;
+  left: 1.4vmax;
+  bottom: -1.4vmax;
+  position: relative;
 }
 
-.article-section-img {
+.article-section-img-top,
+.article-section-img-bottom {
   width: 15vmax;
   height: 20vmax;
+  left: 23vmax;
   background-color: purple;
-  top: 100px;
+  position: absolute;
+}
+
+.article-section-img-bottom {
+  left: 63vmax;
 }
 
 .top-article-container,

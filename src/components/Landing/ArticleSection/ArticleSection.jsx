@@ -7,7 +7,7 @@ export default function ArticleSection({ articles }) {
     <div className='article-section-container'>
       <div className='top-article-container'>
 
-        <div className='article-section-img'>
+        <div className='article-section-img-top'>
           <div className='article-image-border top-border'></div>
         </div>
         <div className='article-section-text-group'>
@@ -27,7 +27,7 @@ export default function ArticleSection({ articles }) {
           </div>
         </div>
 
-        <div className='article-section-img'>
+        <div className='article-section-img-bottom'>
           <div className='article-image-border bottom-border'></div>
         </div>
       </div>
