@@ -21,8 +21,13 @@
 .landing-subtext {
   font-weight: 400;
   line-height: 1.8vmax;
-  padding: 0 0 1.4vmax 0;
+  padding: 1vmax 0 0 0;
   font-size: 1.6vmax;
+}
+
+.source a {
+  font-style: italic;
+  color: var(--main-light-color)
 }
 
 .landing-button {

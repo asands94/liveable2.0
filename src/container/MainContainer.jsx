@@ -26,7 +26,8 @@ export default function MainContainer() {
         <ArticleDetail articles={articles} />
       </Route>
       <Route path='/articles'>
-        <Articles articles={articles}
+        <Articles
+          articles={articles}
           searchResult={searchResult}
           setSearchResult={setSearchResult}
         />

@@ -10,11 +10,12 @@ export default function Articles({ articles, searchResult, setSearchResult }) {
     )
     setSearchResult(results)
   }
-  console.log(searchResult)
 
   const handleSubmit = (event) => event.preventDefault()
 
   if (articles === undefined) return 'LOADING...'
+
+  const reversedSearch = [...searchResult].reverse()
 
   return (
     <div className='articles-container'>
@@ -31,7 +32,7 @@ export default function Articles({ articles, searchResult, setSearchResult }) {
         <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       </div>
       <div className='articles-cards-holder'>
-        {searchResult.map((article, index) => {
+        {reversedSearch.map((article, index) => {
           return (
             <ArticleCards
               // imgURL={article.image.url}
