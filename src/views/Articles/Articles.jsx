@@ -34,11 +34,11 @@ export default function Articles({ articles, searchResult, setSearchResult }) {
         {searchResult.map((article, index) => {
           return (
             <ArticleCards
-              imgURL={article.image.url}
+              // imgURL={article.image.url}
               title={article.title}
               description={article.description}
-              date={article.published_at}
-              slug={article.slug}
+              date={article.date}
+              content={article.content}
               key={index}
             />
           )

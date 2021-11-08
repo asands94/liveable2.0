@@ -18,7 +18,8 @@ aside {
 }
 
 .social-icons {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .article-image {

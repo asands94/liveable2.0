@@ -3,15 +3,15 @@
   border-radius: .5em;
   display: flex;
   flex-direction: column;
-  margin: 6vmax 2vmax 0 2vmax;
-  width: 20vmax;
-  height: 25vmax;
+  margin: 2vmax 1vmax 0 1vmax;
+  width: 15vmax;
+  height: 15vmax;
 }
 
 .article-card-image {
   border-radius: .5em .5em 0 0;
-  width: 20vmax;
-  height: 16vmax;
+  width: 15vmax;
+  height: 12vmax;
 }
 
 .article-card-body {
@@ -20,19 +20,19 @@
 }
 
 .article-link {
-  font-size: 1.4vmax;
+  font-size: 1.1vmax;
   color: var(--accent-light);
   font-weight: 600;
 }
 
 .article-card-des {
-  font-size: 1vmax;
+  font-size: .8vmax;
   margin: .5vmax 0;
 }
 
 .article-date {
   color: var(--neutral-color);
-  font-size: .9vmax;
+  font-size: .6vmax;
 }
 
 @media only screen and (max-width: 360px) {}
