@@ -15,8 +15,8 @@ export default function Footer() {
           <li className='footer-list-item'><Link to='/contact-us'>Contact Us</Link></li>
         </ul>
         <p>
-          (c)2021. Liveable.com All Rights Reserved
-          <Link className='p-policy' to='/privacy-policy'>Privacy Policy</Link>
+          (c)2021. liveable-nz.netlify.app All Rights Reserved
+          <Link className='p-policy' to='//www.freeprivacypolicy.com/live/0f3e883d-2b9d-426e-b5ea-ab7859b66c98' target='_blank' rel='noreferrer'>Privacy Policy</Link>
         </p>
       </div>
     </footer>
