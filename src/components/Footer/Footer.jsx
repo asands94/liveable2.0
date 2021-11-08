@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer>
       <div className='footer-left'>
-        <h1>LOGO</h1>
-        <p>follow us</p>
+        <h1>LIVEABLE</h1>
+        {/* <p>follow us</p> */}
       </div>
       <div className='footer-middle'>
         <ul className='footer-list'>

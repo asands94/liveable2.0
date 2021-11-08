@@ -4,7 +4,7 @@ import './Header.css'
 export default function Header() {
   return (
     <header className='main-header'>
-      <div><NavLink className='logo' to='/'>LOGO</NavLink></div>
+      <div><NavLink className='logo' to='/'>LIVEABLE</NavLink></div>
       <nav>
         <ul className='nav-list'>
           <li className='nav-item'><NavLink to='/articles'>Articles</NavLink></li>
