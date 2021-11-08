@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Moment from "react-moment";
 import ReactMarkdown from "react-markdown";
 import './ArticleCards.css'
