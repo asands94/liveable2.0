@@ -11,7 +11,7 @@ export default function Footer() {
       <div className='footer-middle'>
         <ul className='footer-list'>
           <li className='footer-list-item'><Link to='/about'>About</Link></li>
-          <li className='footer-list-item'><Link to='/work-with-us'>Work With Us</Link></li>
+          <li className='footer-list-item'><Link to='/contact-us'>Work With Us</Link></li>
           <li className='footer-list-item'><Link to='/contact-us'>Contact Us</Link></li>
         </ul>
         <p>
